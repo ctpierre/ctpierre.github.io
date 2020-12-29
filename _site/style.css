@@ -450,7 +450,9 @@ section#tarif h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    
 }
+
 
 section#contact {
     background-color: #222;
@@ -467,6 +469,7 @@ section#contact h2,
 section#contact h3,
 section#contact h4 {
     color: white;
+/*    font-size: 15px;*/
 }
 
 section#contact .form-group {
