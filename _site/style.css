@@ -447,6 +447,11 @@ section#tarif h3.section-subheading {
 }
 }
 
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
 section#contact {
     background-color: #222;
     background-image: none;
