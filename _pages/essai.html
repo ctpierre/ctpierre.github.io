@@ -1,0 +1,121 @@
+---
+layout: page
+title: "essai"
+permalink: "/essai"
+imagelink: "../img/pages/Aretes/Aretes1.jpg"
+---
+
+
+
+
+<script type="text/javascript">
+        function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+} 
+</script>
+
+<!--initialisation du cadre photo-->
+<script type="text/javascript">
+window.onload = function ()
+{
+    var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  // Use the same src in the expanded image as the image being clicked on from the grid
+//  expandedImg.src = "../img/pages/Aretes/Aretes1.jpg";
+    expandImg.src = {{ page.imagelink }};
+};
+</script>
+
+<!--décaler le titre par rapport à la nav bar-->
+<!--<style type="text/css">-->
+<!--#toppage {-->
+<!--    padding-top: 50px;-->
+<!--    padding-bottom: 50px;-->
+<!--}-->
+<!--</style>-->
+<section>
+<div class="container">
+  <div class="row text-center">
+     <div id="toppage" class="col-lg-12 text-center">
+
+     <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">{{ page.title }} </h1>
+     <p> {% assign this = page.imagelink %} {{ }} </p>
+     <hr class="mt-2 mb-5">
+<!--initialisation du cadre image avec image.link-->
+     <img id="expandedImg" src ={{ page.imagelink }} class="img-responsive center-block">
+     <hr class="mt-2 mb-5">
+     <h3 class="section-subheading text-muted">Une brêve description de ma sortie en montagne</h3>
+     </div>
+  </div>
+
+    
+  <div class="row text-center text-lg-left">
+  {% for image in site.static_files %}
+  {% if image.path contains 'img/pages/Aretes' %}
+  
+    <div class="col-lg-2 col-md-3 col-1">
+      <a href="#image" class="d-block mb-4 h-100">
+            <img class="img-responsive img-thumbnail" src={{ site.baseurl }}{{ image.path }} alt="" onclick="myFunction(this);">
+      </a>
+    </div>
+  {% endif %}
+  {% endfor %}
+  </div>
+</div>
+  
+<style type="text/css">
+         /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+} 
+</style>
+
+</section> 
