@@ -13,53 +13,54 @@ permalink: "/tarif"
                 </div>
             </div>    
             <div class="row">
-
-                <div class="col-lg-6 text-left">
-                        <h5 >Courses classiques</h5>
-			<p>Pour les courses classiques, je reprends la <b>tarification proposée par les bureaux des guides locaux</b>. Les variations de prix dépendent notamment de la longueur, la difficulté ou encore l'exposition de la course.
-			
-        		</p>
-        		
-		<h6>Liste tarifaire non-exhaustive </h6>
-                <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th scope="col">Course</th>
-                              <th scope="col">Prix</th>
-                              <th scope="col">Nombre de personnes</th>
-                            </tr>
-                          </thead>
-                        {% for course in site.data.courses %}
-                          <tbody>
-                            <tr class="table-active">
-                              <th scope="row">{{ course.nom }}</th>
-                              <td>{{ course.prix }}</td>
-                              <td>{{ course.nbpax }}</td>
-                            </tr>
-                            <tr>
-                          </tbody>
-                        {% endfor %}
-               </table>
-
-
-
-
-
+                
+                <div class="col-lg-12 text-left">
+                        <h5 >Engagement journée</h5>			
+                        <p>Le tarif de base pour une journée guide hiver est de <b> 350 euros.</b> Ce tarif peut s'élever suivant le nombre de participants ou pour un raid de plusieurs jours.</p>
                 </div>
                 
-                <div class="col-lg-6 text-left">
-                        <h5 >Engagement journée</h5>			
-                        <p>Pour toute course non préalablement tarifée, il vous est possible de m’engager sur un tarif de base de <b> 350 euros la journée.</b> Ce tarif peut s'élever à 400 euros la journée suivant le nombre de participants ou pour un raid de plusieurs jours."</p>
-                </div>
+                <div class="col-lg-12 text-left">
+                        <h5> Courses classiques</h5>
+			<p>Pour les courses classiques, je me base sur la <b>tarification proposée par les bureaux des guides locaux</b>. Les variations de prix dépendent notamment de la longueur, la difficulté ou encore l'exposition de la course.
+			
+        		</p>
+        	</div>
+        		
+<!--		<h6>Liste tarifaire non-exhaustive </h6>-->
+<!--                <table class="table table-hover">-->
+<!--                          <thead>-->
+<!--                            <tr>-->
+<!--                              <th scope="col">Course</th>-->
+<!--                              <th scope="col">Prix</th>-->
+<!--                              <th scope="col">Nombre de personnes</th>-->
+<!--                            </tr>-->
+<!--                          </thead>-->
+<!--                        {% for course in site.data.courses %}-->
+<!--                          <tbody>-->
+<!--                            <tr class="table-active">-->
+<!--                              <th scope="row">{{ course.nom }}</th>-->
+<!--                              <td>{{ course.prix }}</td>-->
+<!--                              <td>{{ course.nbpax }}</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                          </tbody>-->
+<!--                        {% endfor %}-->
+<!--               </table>-->
+
+
+
+
+
+                
                      
-                <div class="col-lg-6 text-left">     
+                <div class="col-lg-12 text-left">     
                      <h5 >Inclu dans le tarif</h5>
                         <p>
-                        Les tarifs indiqués concernent la prestation d’encadrement par un guide de haute montagne. Ils comprennent également la mise à disposition du matériel collectif (corde, matériel de secours...).
+                        Les tarifs indiqués concernent la prestation d’encadrement par un guide de haute montagne. Ils comprennent également la mise à disposition du matériel collectif (corde, matériel de secours, radio...).
                         </p>
                 </div>
                 
-                <div class="col-lg-6 text-left">
+                <div class="col-lg-12 text-left">
                         <h5 >Non inclu dans le tarif </h5>		
                         <p>
                         Reste à votre charge :
@@ -83,7 +84,7 @@ Si le retour s’impose suite à une raison qui vous est propre, un manque de co
                         <h5 >Assurances </h5>		
                         <p>
                         Avant de partir, vérifiez que votre assurance vous couvre en reponsabilité civil et frais de recherche et secours pour l'activité envisagé ! <br>
-                        Si nécessaire, il vous est possible de contracter des assurances à la journée : <a href="https://www.assurance-multi-sports.com" class="text-primary bg-ligth-gray" > https://www.assurance-multi-sports.com</a>
+                        Si nécessaire, il vous est possible de contracter des assurances à la journée : <a href="https://www.assurance-multi-sports.com" style ="color:#091ab2;" > https://www.assurance-multi-sports.com</a>
                         </p>             
 
 
