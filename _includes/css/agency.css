@@ -355,7 +355,7 @@ header {
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: auto 80%;
+    background-size: auto 70%;
     background-repeat: no-repeat;
     -o-background-size: cover;
 }
