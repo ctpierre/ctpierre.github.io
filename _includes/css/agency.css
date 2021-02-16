@@ -184,6 +184,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+    padding-bottom: 5px;
 }
 
 .navbar-default .navbar-brand {
@@ -258,7 +259,7 @@ nav h1 {
     font-size: 18px;
     color: #{{ site.data.template.color.primary }};
     text-transform: none;
-    font-weight: 501;
+    font-weight: 500;
     }
 
 @media(max-width:1000px) {
@@ -355,7 +356,7 @@ header {
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: auto 70%;
+    background-size: auto 80%;
     background-repeat: no-repeat;
     -o-background-size: cover;
 }
