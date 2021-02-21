@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<section class="bg-light-gray">
+
+<div class="container">
+ <div class="row">
+  <div class="col-md-2 sidebarpost">
+   <h1 > mes articles   </h1>
+   
+   <ul>
+  {% for post in site.posts%}
+    <li>
+    
+        <a href="{{ post.url }}"><u>{{ post.title }} </u></a>
+
+    </li>
+  {% endfor %}
+</ul>
+  </div>
+
+  <div class="col-md-9 col-md-offset-1 contenupost">
+   <h1>{{ page.title }}</h1>
+   <h4>{{ page.date |  date: "%d/%m/%y"  }}</h4>
+   {{ content }}
+  </div>
+
+ </div>
+</div>
+
+
+</section>

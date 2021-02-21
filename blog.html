@@ -1,0 +1,54 @@
+---
+layout: page
+permalink: /blog
+---
+<!--<style>   background-color: #e0dede; </style>-->
+<!--<section class="bg-light-gray">-->
+<!--<h1> dernières sorties</h1>-->
+<!--<!--{{ site.posts.first.title }}-->-->
+<!--<!--{{ site.posts.first.content }}-->-->
+<!--<ul>-->
+<!--  {% for post in site.posts  %}-->
+<!--    <li>-->
+<!--      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>-->
+<!--<!--      {{ post.excerpt }}-->-->
+<!--    </li>-->
+<!--  {% endfor %}-->
+<!--</ul>-->
+<!--</div>-->
+<!--</section>-->
+
+<style>   background-color: #e0dede; </style>
+<section class="bg-light-gray">
+
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-sm-2 sidebarblog">
+   <h1 > mes articles   </h1>
+   
+   <ul>
+  {% for post in site.posts%}
+    <li>
+    
+        <a href="{{ post.url }}"><u>{{ post.title }} </u></a>
+
+    </li>
+  {% endfor %}
+</ul>
+
+
+  </div>
+
+  <div class="col-md-9 col-md-offset-1 contenublog">
+
+   <h1>{{ site.posts.first.title }}</h1>
+   <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>
+   {{ site.posts.first.content }}
+
+  </div>
+
+ </div>
+</div>
+
+
+</section>

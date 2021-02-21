@@ -659,3 +659,38 @@ img::-moz-selection {
 }
 
 
+
+@media (max-width: 992px){
+
+ .contenublog {
+ background-color: #e0dede;
+ display: none;
+ 
+ }
+  .sidebarpost {
+ display: none;
+ background-color: #e0dede;
+ }
+}
+
+@media (min-width: 992px) {
+    .sidebarblog {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #CCCCCC;
+  }
+    .sidebarpost {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #CCCCCC;
+  }
+
+}

@@ -1,0 +1,43 @@
+---
+layout: post
+title : "Découverte du ski de randonnée dans le Champsaur !"
+date : "2021-02-19"
+---
+
+<div class="container">
+            <div class="row">
+            
+            <div class="col-lg-4 text-justify">
+                
+                <p>
+                A la découverte du ski de randonnée au-dessus d'Ancelle, pour Maxime, Cédric, Romain, Olivier et Patrick ! <br>
+Sur le parking du Peintre dans la vallée de la Rouanne, c'est la prise en main du matériel. La première fois, tout prend un plus de temps. Comment mettre les peaux de phoque ? Comment faire fonctionner les fixations des skis ? Comment fonctionne le DVA (Détecteur de Victime d'Avalanche ? 
+<br>
+Et puis c'est parti pour le col de la Pourrachière ! Nous quittons la vallée pour rejoindre les Alpages enneigés sous le Piolit. 
+<br>
+Après quelques calages, chacun prend rapidement la maîtrise de ses skis. La technique pour avancer en montée est relativement simple. 
+<br>
+La montée se fait à un rythme régulier et pas trop rapide. Quelques pauses boissons et grignotages permettent de garder des forces pour la descente. <br>
+Arrivés à 1800m d'altitude, la forêt s'ouvre. Sur notre droite, se dresse la descente de la petite Aiguille d'Ancelle. Au fond, le Piolit domine le cirque qui nous entoure. Sur notre gauche, notre objectif ! le col de la Pourrachière ! <br>
+Nous déjeunerons sous le col, au-dessus de 2000m, avec une vue grandiose. <br>
+Pour la descente, nouvelles manips ! Enlever les peaux de phoque, fermer les chaussures, mettre les casques... <br>
+En avant pour la vallée ! La neige est variable : parfois poudreuse, parfois tassée, parfois mouillée. Les adaptations des skieurs aux changements de la neige sont parfois spectaculaires ;) <br>
+Finalement chacun prend son rythme, adapte son ski et nous rejoignons la vallée ! <br>
+Bravo à tous pour cette première !
+
+             </p>
+
+            </div>
+            
+            
+                {% for image in site.static_files %}
+                  {% if image.path contains 'img/posts/2021-02-19' %}
+                    <div class="col-lg-4 text-center">
+                    <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                
+
+            </div>
+</div>
