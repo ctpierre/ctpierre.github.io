@@ -7,7 +7,7 @@ date : "2021-02-19"
 <div class="container">
             <div class="row">
             
-            <div class="col-lg-4 text-justify">
+            <div class="col-sm-5 text-justify">
                 
                 <p>
                 A la découverte du ski de randonnée au-dessus d'Ancelle, pour Maxime, Cédric, Romain, Olivier et Patrick ! <br>
@@ -32,7 +32,7 @@ Bravo à tous pour cette première !
             
                 {% for image in site.static_files %}
                   {% if image.path contains 'img/posts/2021-02-19' %}
-                    <div class="col-lg-4 text-center">
+                    <div class="col-sm-5 text-center">
                     <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
                     </div>
                   {% endif %}
