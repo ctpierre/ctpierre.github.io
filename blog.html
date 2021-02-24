@@ -23,8 +23,8 @@ permalink: /blog
 
 <div class="container">
  <div class="row">
-  <div class="col-xs-12 col-sm-2 sidebarblog">
-   <h1 > mes articles   </h1>
+  <div class="col-lg-2 col-sm-4 barreblog" style="background: grey">
+   <h1 style="font-size: 18px"> mes articles   </h1>
    
    <ul>
   {% for post in site.posts%}
@@ -39,7 +39,7 @@ permalink: /blog
 
   </div>
 
-  <div class="col-md-9 col-md-offset-1 contenublog">
+  <div class="col-sm-10 contenublog">
 
    <h1>{{ site.posts.first.title }}</h1>
    <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>

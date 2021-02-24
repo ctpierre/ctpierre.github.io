@@ -33,7 +33,7 @@ Merci Vivien pour cet itinéraire original et les magnifiques photos !
             
                 {% for image in site.static_files %}
                   {% if image.path contains 'img/posts/2021-02-18' %}
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 col-lg-5 text-center">
                     <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
                     </div>
                   {% endif %}
