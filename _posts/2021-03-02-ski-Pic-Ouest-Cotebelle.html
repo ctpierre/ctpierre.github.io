@@ -1,0 +1,51 @@
+---
+layout: post
+title : "Sommet du Queyras en ski de randonnée"
+date: "2021-03-02"
+---
+
+<div class="container">
+            <div class="row">
+            
+            <div class="col-sm-5 text-justify">
+                
+                <p>
+Aller skier dans le Queyras, c'est partir à la rencontre de la montagne sauvage ! <br> Pour commencer, une petite route sinueuse qui s'enfonce toujours plus haut dans les forêts de pins et de mélèzes au-dessus de Château-Queyras. Au bout, l'authentique petit village de Souliers, perché à plus de 1800 m d'altitude ! <br>
+Quel décor pour commencer notre sortie de ski de rando ! <br> Au fond, on aperçoit les arêtes de Côte Belle, l'objectif du jour! <br>
+Du parking, avec Claude et Florian, nous partons skis aux pieds pour remonter le vallon de Souliers. Agréable mise en jambe à travers les forêts clairsemées de mélèzes. <br>
+Du lac de Souliers, la pente s'accentue ! Florian, le split-border du groupe, chausse les couteaux. Pas évident de manier ces gros skis dans les traversées de pentes. <br>
+Arrivés sur l'arête de Côte Belle, à plus de 2700m, la vue est splendide sur les sommets du Queyras. Le pic de Rochebrune se dresse sur notre droite. En-dessous de nos spatules, les pentes Nord dévalent vers le petit village de Cervières. <br>
+Pause pique nique au sommet du Pic Ouest de Côte Belle puis nous poursuivons à ski l'arête Ouest. A notre droite, en contrebas, le village de Brunissard. A notre gauche, quelques centaines de mètres plus bas, le lac de Souliers. Une progression aérienne mais confortable sur cette arête enneigée ! <br>
+Au bout du parcours, la magnifique pente Sud Ouest qui rejoint le lac de Souliers ! Une manière plus originale de redescendre du Pic Ouest. <br>
+Vers 12h, avec la chaleur persistante des jours derniers, la pente est revenue à souhait. Miam miam ! Une belle descente s'annonce. <br>
+Les premiers virages, dans une pente flirtant avec les 40°, se font avec retenues. Puis, une fois dans le vallon, la pente s'élargit et nous offre un ski de grande qualité. <br>
+Belle récompense après la montée de 1000m ! <br> 
+Nouvelle remontée pour prolonger le plaisir ! Quelques centaines de mètres plus haut nous voici en haut d'un raide couloir Nord Est. La qualité de la neige est suprenante ! Un peu poudreuse, un peu tassé. Il faut se méfier des changements de neige mais quelle belle surprise pour terminer ce voyage dans le Queyras ! <br>
+Dernières courbes et poussées à travers les mélèzes et nous voici de retour à Souliers. <br>
+Bravo à tous les deux ! Beaux moments de ski ! <br>
+
+          <footer>
+          <div class="row"> 
+                <div class="page-scroll btn btn-xl">                 
+                <a href="https://www.facebook.com/pierrecunat/posts/194622302301342"> Mon actualité sur FB !</a>
+                </div>           
+          </div> 
+           </footer>
+
+
+                </p>
+
+            </div>
+            
+            
+                {% for image in site.static_files %}
+                  {% if image.path contains 'img/posts/2021-03-02' %}
+                    <div class="col-sm-5 text-center">
+                    <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                
+
+            </div>
+</div>
