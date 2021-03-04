@@ -1,0 +1,36 @@
+---
+layout: post
+title : "Sous la grande en ski de randonnée"
+date: "2021-02-28"
+---
+
+<div class="container">
+            <div class="row">
+            
+            <div class="col-sm-5 text-justify">
+                
+                <p>
+Départ du petit village d'Archinard en horaire décallé ! <br>
+Aujourd'hui, visite des pentes Nord Est du coin. Donc on peut se permettre de se lever un plus tard, d'autant plus que la météo annonce du vent. <br>
+Première montée vers la Recula. Finalement, le vent est faible et la chaleur se fait ressentir. Les mélèzes nous offrent une ombre bien agréable. Toujours suprenant de rechercher à skier à l'ombre en février ! <br>
+La première montée est vite avalée par les trois triathlètes qui m'accompagnent. <br> En choississant les orientations, on se fait une belle première descente dans une neige revenue comme il faut. Tout le monde à le sourire pour attaquer la remontée des pentes Nord Est sous la Grande Autane. 
+<br> Un certain nombre de conversions plus tard, on atteint le replat sous la Grande Autane. Lieu de notre pique-nique ! Le sommet de la Grande Autane n'est plus si loin mais ce sera pour une autre fois. <br> 
+Les premiers virages sont délicats... Neige souvent croutée. Finalement les pentes Nord Est ne sont pas si accueillantes. Alors on se décalle pour chercher une neige plus skiante pour le reste de la descente et faire de beaux virages jusqu'au petit village d'Archinard ;)
+Bravo à l'équipe des triathlètes, un bon entrainement pour la saision future ! 
+
+                </p>
+
+            </div>
+            
+            
+                {% for image in site.static_files %}
+                  {% if image.path contains 'img/posts/2021-02-28' %}
+                    <div class="col-sm-5 text-center">
+                    <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                
+
+            </div>
+</div>
