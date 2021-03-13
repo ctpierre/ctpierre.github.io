@@ -67,7 +67,9 @@ layout: page
                                 <div class="row">
                                         <div class="col-sm-5 text-justify">
                                                 {{ site.posts.first.content }}
-                                                {% include share.html %} 
+<!--                                                "{{ site.url }}/img/posts/{{ page.path | remove: '_posts/' | remove: '.html' | remove: 'blog/index' }}/{{ page.image }}"-->
+<!--                                                {{ page.path }}-->
+<!--                                                {% include share.html %} -->
                                         </div>
 
                                         {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}
