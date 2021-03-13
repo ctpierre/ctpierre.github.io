@@ -1,0 +1,114 @@
+---
+layout: page
+---
+
+<style>   background-color: #e0dede; </style>
+
+<section class="bg-light-gray">
+
+<div class="container">
+         <div class="row">
+                <div class="col-md-2 barreblog" style="background: grey">
+                        <h1 style="font-size: 18px"> mes articles   </h1>
+
+                        <ul>
+                                {% for post in paginator.posts %}
+                                        <li>
+                                                <a href="{{ post.url }}"><u>{{ post.title }}</u></a>
+
+                                        </li>
+                                {% endfor %}
+
+                        </ul>
+
+                        <div class="pagination">
+                          {% if paginator.previous_page %}
+                            <a href="{{ paginator.previous_page_path }}" class="previous">
+                              Précédent
+                            </a>
+                          {% else %}
+                            <span class="previous">Précédent</span>
+                          {% endif %}
+                          <span class="page_number ">
+                            Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                          </span>
+                          {% if paginator.next_page %}
+                            <a href="{{ paginator.next_page_path }}" class="next">Suivant</a>
+                          {% else %}
+                            <span class="next ">Suivant</span>
+                          {% endif %}
+                        </div>
+
+<!--                                {% if paginator.total_pages > 1 %}-->
+<!--                                <div class="pagination">-->
+<!--                                 <ul>-->
+<!--                                {% if paginator.previous_page %}-->
+<!--                                 <li class="prev"><a href="/posts/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}">Previous</a></li>-->
+<!--                                {% endif %}-->
+<!--                                 <li><a {% if paginator.page == 1 %}class="active" {% endif %}href="/posts/">1</a></li>-->
+<!--                                {% for count in (2..paginator.total_pages) %}-->
+<!--                                 <li><a {% if paginator.page == count %}class="active" {% endif %}href="/posts/page{{ count }}">{{ count }}</a></li>-->
+<!--                                {% endfor %}-->
+<!--                                {% if paginator.next_page %}-->
+<!--                                 <li class="next"><a href="/posts/page{{ paginator.next_page }}">Next</a></li>-->
+<!--                                {% endif %}-->
+<!--                                 </ul>-->
+<!--                                </div>-->
+<!--                                {% endif %}-->
+
+
+                </div>
+
+                <div class="col-sm-10 contenublog">
+                
+                <h3><a href=”{{ site.url}}/posts/”>Recent Posts</a></h3>
+{% for post in paginator.posts %}
+<article>
+ {% if post.link %}
+ <h2 class=”link-post”><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a> <a href=”{{ post.link }}” target=”_blank” title=”{{ post.title }}”><i class=”fa fa-link”></i></h2>
+ {% else %}
+ <h2><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a></h2>
+{{ site.url }}/img/posts/{{ post.path | remove: '_posts/' | remove: '.html'  }}/{{ post.image }}
+<img class="img-thumbnail img-responsive" src="/img/posts/{{ post.path | remove: '_posts/' | remove: '.html'  }}/{{ post.image }}" alt="{{ image.name }}" width="20%"> 
+ <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+ {% endif %}
+</article>
+{% endfor %}
+                
+
+                        <h1>{{ site.posts.first.title }}</h1>
+                        <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-sm-5 text-justify">
+                                                {{ site.posts.first.content }}
+                                                {% include share.html %} 
+                                        </div>
+
+                                        {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}
+                                        
+                                        {% for image in site.static_files %}
+                                                {% if image.path contains datepost %}
+                                                <div class="col-sm-5 text-center">
+                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                                                </div>
+                                                {% endif %}
+                                        {% endfor %}
+                                </div>
+                        </div> 
+                        
+
+                </div>
+
+         </div>
+</div>
+
+<footer>
+        <div class="row"> 
+                <div class="page-scroll btn btn-xl">                 
+                <       a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
+                </div>           
+        </div> 
+</footer>
+
+</section>

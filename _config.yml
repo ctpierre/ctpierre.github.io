@@ -27,9 +27,17 @@ address:
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+paginate: 10
+paginate_path: "blog/page:num/"
 
 include: ['_pages']
 
 #Facebook Sharing
 facebook_app_id: 1442363299439053
+

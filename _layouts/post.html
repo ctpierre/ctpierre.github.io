@@ -4,30 +4,69 @@ layout: page
 
 <section class="bg-light-gray">
 
-<div class="container">
- <div class="row">
-  <div class="col-sm-2 barrepost" style="background: grey">
-   <h1 style="font-size: 18px"> Mes articles   </h1>
-   
-   <ul>
-  {% for post in site.posts%}
-    <li>
-    
-        <a href="{{ post.url }}"><u>{{ post.title }} </u></a>
-
-    </li>
-  {% endfor %}
-</ul>
-  </div>
-
-  <div class="col-sm-10 ">
-   <h1>{{ page.title }}</h1>
-   <h4>{{ page.date |  date: "%d/%m/%y"  }}</h4>
-   {{ content }}
-  </div>
-
- </div>
+        <div class="container">
+        <div class="row">
+        
+<nav class="post_navigation">
+  {% if page.previous.url %}
+<div class="col-sm-6 text-left">
+    <a href="{{ page.previous.url }}" class="text-right">&laquo; Article précédent : <u>{{ page.previous.title }}</u> </a>
 </div>
+  {% endif %}
+  {% if page.next.url %}
+    <div class="col-sm-6 text-right">
+        <a href="{{ page.next.url }}" >Article suivant : <u>{{ page.next.title }} </u>&raquo;</a>            
+    </div>
+
+  {% endif %}
+</nav>
+<!--                <div class="col-sm-2 barrepost" style="background: grey">-->
+<!--                        <h1 style="font-size: 18px"> Mes articles   </h1>-->
+
+<!--                        <ul>-->
+<!--                        {% for post in site.posts%}-->
+<!--                        <li>-->
+
+<!--                        <a href="{{ post.url }}"><u>{{ post.title }} </u></a>-->
+
+<!--                        </li>-->
+<!--                        {% endfor %}-->
+<!--                        </ul>-->
+<!--                </div>-->
+
+                <div class="col-sm-12 text-left">
+                        <h1>{{ page.title }}</h1>
+                        <h4>{{ page.date |  date: "%d/%m/%y"  }}</h4>
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-sm-6 text-justify">
+                                                {{ content }}
+                                                {% include share.html %} 
+                                        </div>
+
+                                        {% assign datepost = page.date | date: "%Y-%m-%d"  %}
+                                        
+                                        {% for image in site.static_files %}
+                                                {% if image.path contains datepost %}
+                                                <div class="col-sm-6 text-center">
+                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                                                </div>
+                                                {% endif %}
+                                        {% endfor %}
+                                </div>
+                        </div>             
+                </div>
+
+        </div>
+        </div>
+
+        <footer>
+        <div class="row"> 
+                <div class="page-scroll btn btn-xl">                 
+                <a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
+                </div>           
+        </div> 
+        </footer>
 
 
 </section>
