@@ -411,21 +411,45 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 50px;
 }
 
-
-@media (min-width: 768px) and (max-width: 1200px) {
-   .navbar-collapse.collapse {
-       display: none !important;
-   }
+@media (max-width: 1200px) {
+/*   .navbar-collapse.collapse {*/
+/*       display: none !important;*/
+/*   }*/
    .navbar-toggle{
         display: block !important;
    }
    .navbar-header{
         float: none;
    }
+
+
+  .navbar-collapse.collapse {
+      display: none!important;
+      max-height: none;
+  }
+  .navbar-nav {
+      float: none!important; 
+  }
+  .navbar-nav>li {
+      float: none;
+  } 
+  .collapse.in{
+      display:block !important;
+  }
+/* .dropdown-menu {*/
+/*     position: static;*/
+/*     float: none;*/
+/*     width: auto !important;*/
+/*     margin-top: 0;*/
+/*     background-color: transparent;*/
+/*     border: 0;*/
+/*     -webkit-box-shadow: none;*/
+/*     box-shadow: none;*/
+/*  }*/
 }
 
 @media(max-width:768px) {
