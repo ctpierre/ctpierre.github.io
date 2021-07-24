@@ -186,7 +186,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -568,6 +568,13 @@ section#tarif h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
     
+}
+
+section#tarif {
+/*    background-color: #222;*/
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
