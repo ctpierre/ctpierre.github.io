@@ -6,64 +6,67 @@ title: "Blog de haute montagne, mes dernières sorties en montagne, ski, alpinis
 
 <style>   background-color: #e0dede; </style>
 
-<section class="bg-light-gray">
+        <section class="bg-light-gray">
 
 
-<div class="container">
-         <div class="row">
-                <div class="col-md-2 barreblog" style="background: grey">
-                        
-                        <h1 style="font-size: 18px"> mes articles   </h1>
+        <div class="container">
+                 <div class="row">
+                        <div class="col-md-2 barreblog" style="background: grey">
+                                
+                                <h1 style="font-size: 18px"> mes articles   </h1>
 
-                        <ul>
-                                {% for post in site.posts%}
-                                        <li>
+                                <ul>
+                                        {% for post in site.posts%}
+                                                <li>
 
-                                                <a href="{{ post.url }}"><u>{{ post.title }} </u></a>
+                                                        <a href="{{ post.url }}"><u>{{ post.title }} </u></a>
 
-                                        </li>
-                                {% endfor %}
-
-                        </ul>
-
-
-                </div>
-
-                <div class="col-sm-10 contenublog">
-
-                        <h1>{{ site.posts.first.title }}</h1>
-                        <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>
-                        <div class="container">
-                                <div class="row">
-                                        <div class="col-sm-5 text-justify">
-                                                {{ site.posts.first.content }}
-                                                {% include share.html %} 
-                                        </div>
-
-                                        {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}
-                                        
-                                        {% for image in site.static_files %}
-                                                {% if image.path contains datepost %}
-                                                <div class="col-sm-5 text-center">
-                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
-                                                </div>
-                                                {% endif %}
+                                                </li>
                                         {% endfor %}
-                                </div>
+
+                                </ul>
+
+
+                        </div>
+
+                        <div class="col-sm-10 contenublog">
+
+                                <h1>{{ site.posts.first.title }}</h1>
+                                <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-sm-5 text-justify">
+                                                        {{ site.posts.first.content }}
+                                                        {% include share.html %} 
+                                                </div>
+
+                                                {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}
+                                                
+                                                {% for image in site.static_files %}
+                                                        {% if image.path contains datepost %}
+                                                        <div class="col-sm-5 text-center">
+                                                                <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                                                        </div>
+                                                        {% endif %}
+                                                {% endfor %}
+                                        </div>
+                                </div> 
+                                
+
+                        </div>
+
+                 </div>
+
+                <footer>
+                        <div class="row"> 
+                                <div class="page-scroll btn btn-xl">                 
+                                <       a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
+                                </div>           
                         </div> 
-                        
+                </footer>
 
-                </div>
+        </div>
 
-         </div>
-</div>
 
-<footer>
-        <div class="row"> 
-                <div class="page-scroll btn btn-xl">                 
-                <       a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
-                </div>           
-        </div> 
-</footer>
 
 </section>
