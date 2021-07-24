@@ -4,9 +4,9 @@ permalink: /blog
 title: "Blog de haute montagne, mes dernières sorties en montagne, ski, alpinisme, escalade,cascade de glace !"
 ---
 
-<style>   background-color: #e0dede; </style>
+<!--<style>   background-color: #e0dede; </style>-->
 
-        <section class="bg-light-gray">
+<section class="bg-light-gray">
 
 
         <div class="container">
@@ -44,9 +44,9 @@ title: "Blog de haute montagne, mes dernières sorties en montagne, ski, alpinis
                                                 
                                                 {% for image in site.static_files %}
                                                         {% if image.path contains datepost %}
-                                                        <div class="col-sm-5 text-center">
-                                                                <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
-                                                        </div>
+                                                                <div class="col-sm-5 text-center">
+                                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
+                                                                </div>
                                                         {% endif %}
                                                 {% endfor %}
                                         </div>
@@ -60,7 +60,7 @@ title: "Blog de haute montagne, mes dernières sorties en montagne, ski, alpinis
                 <footer>
                         <div class="row"> 
                                 <div class="page-scroll btn btn-xl">                 
-                                <       a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
+                                        <a href="https://www.facebook.com/pierrecunat"> Mon actualité sur FB !</a>
                                 </div>           
                         </div> 
                 </footer>
