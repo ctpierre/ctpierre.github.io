@@ -28,31 +28,31 @@ title: "Blog de haute montagne, mes dernières sorties en montagne, ski, alpinis
 
                         </div>
 
-                        <div class="col-sm-10 contenublog">
+<!--                        <div class="col-sm-10 contenublog">-->
 
-                                <h1>{{ site.posts.first.title }}</h1>
-                                <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>
-                                <div class="container">
-                                        <div class="row">
-                                                <div class="col-sm-5 text-justify">
-                                                        {{ site.posts.first.content }}
-                                                        {% include share.html %} 
-                                                </div>
+<!--                                <h1>{{ site.posts.first.title }}</h1>-->
+<!--                                <h4>{{ site.posts.first.date |  date: "%d/%m/%y"  }}</h4>-->
+<!--                                <div class="container">-->
+<!--                                        <div class="row">-->
+<!--                                                <div class="col-sm-5 text-justify">-->
+<!--                                                        {{ site.posts.first.content }}-->
+<!--                                                        {% include share.html %} -->
+<!--                                                </div>-->
 
-                                                {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}
-                                                
-                                                {% for image in site.static_files %}
-                                                        {% if image.path contains datepost %}
-                                                                <div class="col-sm-5 text-center">
-                                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">
-                                                                </div>
-                                                        {% endif %}
-                                                {% endfor %}
-                                        </div>
-                                </div> 
-                                
+<!--                                                {% assign datepost = site.posts.first.date | date: "%Y-%m-%d"  %}-->
+<!--                                                -->
+<!--                                                {% for image in site.static_files %}-->
+<!--                                                        {% if image.path contains datepost %}-->
+<!--                                                                <div class="col-sm-5 text-center">-->
+<!--                                                                        <img class="img-thumbnail img-responsive" src="{{ image.path }}" alt="{{ image.name }}">-->
+<!--                                                                </div>-->
+<!--                                                        {% endif %}-->
+<!--                                                {% endfor %}-->
+<!--                                        </div>-->
+<!--                                </div> -->
+<!--                                -->
 
-                        </div>
+<!--                        </div>-->
 
                  </div>
 
