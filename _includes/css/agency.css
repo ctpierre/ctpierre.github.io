@@ -627,37 +627,37 @@ section#contact .form-control:focus {
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
+/*section#contact::-webkit-input-placeholder {*/
+/*    text-transform: uppercase;*/
+/*    font-family: {{ site.data.template.font.primary }};*/
+/*    font-weight: 700;*/
+/*    color: #bbb;*/
+/*}*/
 
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
+/*section#contact:-moz-placeholder {*/
+/*    text-transform: uppercase;*/
+/*    font-family: {{ site.data.template.font.primary }};*/
+/*    font-weight: 700;*/
+/*    color: #bbb;*/
+/*}*/
 
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
+/*section#contact::-moz-placeholder {*/
+/*    text-transform: uppercase;*/
+/*    font-family: {{ site.data.template.font.primary }};*/
+/*    font-weight: 700;*/
+/*    color: #bbb;*/
+/*}*/
 
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
+/*section#contact:-ms-input-placeholder {*/
+/*    text-transform: uppercase;*/
+/*    font-family: {{ site.data.template.font.primary }};*/
+/*    font-weight: 700;*/
+/*    color: #bbb;*/
+/*}*/
 
-section#contact .text-danger {
-    color: #e74c3c;
-}
+/*section#contact .text-danger {*/
+/*    color: #e74c3c;*/
+/*}*/
 
 footer {
     padding: 25px 0;
