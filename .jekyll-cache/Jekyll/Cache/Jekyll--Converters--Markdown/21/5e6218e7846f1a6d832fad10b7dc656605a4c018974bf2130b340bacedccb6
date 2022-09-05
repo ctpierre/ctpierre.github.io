@@ -1,0 +1,53 @@
+I"�
+<section id="Votre-Guide" class="bg-gray">
+        <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h1 class="section-heading"> Votre guide du Champsaur Valgaudemar </h1>
+                                <h3 class="section-subheading text-mutedA" style="font-size: 20px">Pierre CUNAT</h3>
+                        </div>
+                </div>
+               
+                <div class="row">
+                        <div class="col-sm-6 text-center">
+                                <img class="img-thumbnail" src="img/about/VotreGuide.jpg" alt="Pierre CUNAT A. Guide de Haute Montagne" />
+
+                        </div>
+                <!--
+                <h2 class="section-heading">Activités montagne</h2>
+                -->
+                <!--
+                <h3 class="section-subheading text-mutedA">Lorem ipsum dolor sit amet consectetur.</h3>
+                -->
+                        <div class="col-sm-6 ">
+                                <p class="text-mutedA text-justify">
+                                Passionné de montagne, je parcours le massif alpin depuis plusieurs années. Plutôt skieur dans mes jeunes années, je me délecte aujourd'hui des joies de la montagne sous toutes ses formes. Quand on habite aux portes du massif des Ecrins, difficile d'échapper à la tentation de partir en montagne ! <br />
+
+                                Déjà ingénieur puis enseignant, je suis aujourd'hui guide de haute montagne dans le Champsaur Valgaudemar. L'appel de la montagne a été le plus fort ! <br />
+
+                                Je me ferai un plaisir de vous accompagner dans vos projets de montagne : de la découverte au perfectionnement. <br />
+
+                                J'habite dans les Hautes Alpes, à Ancelle, petit village du Champsaur proche de Gap. Les massifs des Ecrins et de l'Oisans sont fabuleux pour les sports de montagne : alpinisme, escalade, ski de randonnée, cascade de glace. 
+                                Evidemment, je reste ouvert à d'autres destinations, dans le massif du Mont Blanc, en Italie, en Suisse... <br />
+
+                                Contactez moi pour définir ensemble la course qui vous convient ! 
+                                </p>
+
+                        </div>	
+                </div>
+
+                <footer>
+                        <div class="row"> 
+                                <div class="col text-center">                 
+                                <a href="/#activites" class="page-scroll btn btn-xl">Mes activités de montagne</a>
+                                </div>           
+                        </div> 
+                </footer>
+
+        </div>
+
+
+
+</section>
+
+:ET

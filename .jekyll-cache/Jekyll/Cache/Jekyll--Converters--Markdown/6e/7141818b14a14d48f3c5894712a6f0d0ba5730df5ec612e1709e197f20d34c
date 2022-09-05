@@ -1,0 +1,106 @@
+I"<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;section id="tarif" class="bg-gray"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 text-left"&gt;
+                &lt;h1 class="section-heading text-center"&gt;Tarifs&lt;/h1&gt;
+                &lt;h3 class="section-subheading text-center"&gt;Contactez-moi pour obtenir un tarif détaillé !&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;    
+        &lt;div class="row"&gt;
+            
+            &lt;div class="col-lg-12 text-left"&gt;
+                    &lt;h5 &gt;Engagement journée&lt;/h5&gt;			
+                    &lt;p&gt;Le tarif de base pour une journée guide est de &lt;b&gt; 350 euros.&lt;/b&gt; Ce tarif peut s'élever suivant le nombre de participants et la difficulté de la sortie envisagée.&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="col-lg-12 text-left"&gt;
+                    &lt;h5&gt; Courses classiques&lt;/h5&gt;
+		&lt;p&gt;Pour les courses classiques, je me base sur la &lt;b&gt;tarification proposée par les bureaux des guides locaux&lt;/b&gt;. Les variations de prix dépendent notamment de la longueur, la difficulté ou encore l'exposition de la course.
+		
+    		&lt;/p&gt;
+    	&lt;/div&gt;
+</code></pre></div></div>
+
+<!--		<h6>Liste tarifaire non-exhaustive </h6>-->
+<!--                <table class="table table-hover">-->
+<!--                          <thead>-->
+<!--                            <tr>-->
+<!--                              <th scope="col">Course</th>-->
+<!--                              <th scope="col">Prix</th>-->
+<!--                              <th scope="col">Nombre de personnes</th>-->
+<!--                            </tr>-->
+<!--                          </thead>-->
+<!--                        {% for course in site.data.courses %}-->
+<!--                          <tbody>-->
+<!--                            <tr class="table-active">-->
+<!--                              <th scope="row">{{ course.nom }}</th>-->
+<!--                              <td>{{ course.prix }}</td>-->
+<!--                              <td>{{ course.nbpax }}</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                          </tbody>-->
+<!--                        {% endfor %}-->
+<!--               </table>-->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            &lt;div class="col-lg-12 text-left"&gt;     
+                 &lt;h5 &gt;Inclu dans le tarif&lt;/h5&gt;
+                    &lt;p&gt;
+                    Les tarifs indiqués comprennent :
+                    &lt;li&gt;la prestation d’encadrement par un guide de haute montagne,
+                    &lt;li&gt;la mise à disposition du matériel collectif (corde, matériel de secours, radio...).
+                    &lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="col-lg-12 text-left"&gt;
+                    &lt;h5 &gt;Non inclu dans le tarif &lt;/h5&gt;		
+                    &lt;p&gt;
+                    Reste à votre charge :
+                    &lt;li&gt;les frais de location du matériel individuel,&lt;/li&gt;
+                    &lt;li&gt;les frais de restauration (repas, boissons) et d’hébergement  pour vous et votre guide,&lt;/li&gt;
+                    &lt;li&gt;les frais de déplacement pour vous et votre guide,&lt;/li&gt;
+                    &lt;li&gt;les frais de remontées mécaniques pour vous et votre guide.&lt;/li&gt;
+                    &lt;/p&gt;                        
+            &lt;/div&gt;
+                    &lt;h5 &gt;Avertissement &lt;/h5&gt;		
+                    &lt;p&gt; &lt;!--                        La météo se gâte ou les conditions sur le terrain ne sont pas celles qui étaient attendues. Une modification ou interruption de la course devient nécessaire. Dans ce cas, la tarification initiale sera revue. &lt;br&gt;--&gt;
+</code></pre></div></div>
+
+<p>Si le retour s’impose suite à une raison qui vous est propre, un manque de condition physique de votre part, de niveau technique ou autres causes, le tarif reste inchangé. 
+                        &lt;/p&gt;                      <br />
+                        &lt;h5 &gt;Réservation et paiement &lt;/h5&gt;		
+                        &lt;p&gt; Appelez moi pour réserver une date ! <br /> Votre réservation sera effective suite au versement d’un acompte correspondant à 30% du montant total de la prestation. <br /> En cas d’annulation de votre part jusqu’à 20 jours avant la course, l’acompte vous sera reversé. Après ce délai, il sera conservé.  <br />
+Le règlement restant est à remettre au guide avant le départ de la course : je ne prends pas la carte bancaire !
+                        &lt;/p&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                    &lt;h5 &gt;Assurances &lt;/h5&gt;		
+                    &lt;p&gt;
+                    Avant de partir, vérifiez que votre assurance vous couvre en responsabilité civile et frais de recherches et secours pour l'activité envisagée ! &lt;br&gt;
+                    Si nécessaire, il vous est possible de contracter des assurances à la journée : &lt;a href="https://www.assurance-multi-sports.com" style ="color:#091ab2;" &gt; https://www.assurance-multi-sports.com&lt;/a&gt;
+                    &lt;/p&gt;             
+
+
+
+            &lt;/div&gt;
+        &lt;/div&gt;                
+</code></pre></div></div>
+
+<!--{% for page in site.pages %} {% if page.title %}-->
+<!--<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.url }}</a> </li>-->
+<!--{% endif %} {% endfor %}	-->
+<!--       <li><a href="/essai/">essai</a> </li>-->
+<!--                </div>-->
+<!--            </div>-->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      &lt;footer&gt;
+              &lt;div class="row"&gt; 
+                    &lt;div class="col text-center"&gt;                 
+                    &lt;a href="/#activites" class="page-scroll btn btn-xl"&gt;Mes activités de montagne&lt;/a&gt;
+                    &lt;/div&gt;           
+              &lt;/div&gt; 
+      &lt;/footer&gt;
+
+  &lt;/div&gt;
+  
+
+&lt;/section&gt;
+</code></pre></div></div>
+:ET

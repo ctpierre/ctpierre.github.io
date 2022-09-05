@@ -1,0 +1,45 @@
+I"L
+<section id="alpinisme" class="bg-light-gray">
+        <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h3 class="section-subheading text-mutedA">"La montagne nous offre le décor... A nous d'inventer l'histoire qui va avec !" Nicolas HELMBACHER</h3>
+                                <h1 class="section-heading">Alpinisme</h1>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <p class="text-mutedA"> Au dessus des sentiers de randonnée, au-dessus des refuges, la haute montagne ! <br /> Son univers minéral, ses glaciers, ses pentes de neige, ses parois, ses points de vue à couper le souffle... <br />
+                                Vous souhaitez découvrir la haute montagne ? Un sommet, un itinéraire vous tient à cœur ? <br /> Appelez-moi et nous construirons ensemble l’aventure qui vous convient !  
+                                <br />
+                                Le Valgaudemar, en plein coeur des Ecrins, offre des itinéraires d'alpinisme variés : idéal pour débuter ou se perfectionner : randonnée glaciaire, course d'arête, grandes faces rocheuses...  
+                                </p>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/alpinisme/alpinisme1.jpg" alt="alpinisme arête rochause" />
+                        </div>
+                        
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/alpinisme/alpinisme2.jpg" alt="les Rouies voie normale" />
+                        </div>
+
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/alpinisme/alpinisme3.jpg" alt="le Monte Rose" />
+                        </div>
+                        
+                </div>
+                
+                <footer>
+                        <div class="row"> 
+                                <div class="col text-center">                 
+                                        <a href="/#activites" class="page-scroll btn btn-xl">Autres activités de montagne</a>
+                                </div>           
+                        </div> 
+                </footer>
+        </div>
+</section>
+:ET

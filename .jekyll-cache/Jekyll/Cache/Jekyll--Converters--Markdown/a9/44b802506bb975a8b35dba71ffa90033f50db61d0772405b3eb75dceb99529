@@ -1,0 +1,52 @@
+I"�<section id="ski-de-rando" class="bg-light-gray">
+        <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h1 class="section-heading">Ski de randonnée</h1>
+                                <h3 class="section-subheading text-mutedA">La montagne au bout des spatules</h3>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <p class="text-mutedA"> 
+                                <!--                    L’hiver, la montagne semble s’éloigner. Les chemins vers alpages, recouverts par un épais manteau blanc, sont inaccessibles.  Alors comment rejoindre ces cimes immaculées, parcourir ces vastes champs de neige ? -->
+
+                                <!--Le ski de randonnée est la solution ! Ces dernières années, la matériel a considérablement évolué : plus léger, plus confortable et plus facile d’utilisation. -->
+
+                                <!--Marre des stations sur bondés, -->
+                                Envie de retrouver le calme apaisant des montagnes, amoureux des espaces sauvages, venez pratiquer le ski de randonnée accompagné d’un guide. <br />
+
+                                Les Hautes Alpes, et notamment le Champsaur, offrent un terrain de jeu merveilleux pour le ski de randonnée. 
+
+                                Pour  une sortie sur une journée ou pour une évasion de plusieurs jours en raid à ski, appelez moi pour définir le programme qui vous convient !  </p>
+                        </div>
+                </div>            
+
+                <div class="row">
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/skirando/skirando1.jpg" alt="ski de randonnée au Piolit" />
+                        </div>
+                
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/skirando/skirando3.jpg" alt="ski de randonnée en Suisse, le Rogneux" />
+                        </div>
+                        <div class="col-sm-4 text-center">
+                                <img class="img-thumbnail img-responsive" src="img/skirando/skirando5.jpg" alt="ski de randonnée à Ancelle" />
+                        </div>
+                </div>
+
+                <footer>
+                        <div class="row"> 
+                                <div class="col text-center">                 
+                                        <a href="/#activites" class="page-scroll btn btn-xl">Autres activités de montagne
+                                        </a>
+                                </div>           
+                        </div> 
+                </footer>
+
+        </div>
+        
+
+</section>
+:ET
