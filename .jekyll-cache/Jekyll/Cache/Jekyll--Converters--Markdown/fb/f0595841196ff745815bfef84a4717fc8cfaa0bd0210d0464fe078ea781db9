@@ -1,4 +1,4 @@
-I"é
+I"ý
 <section id="Votre-Guide" class="bg-gray">
         <div class="container">
                 <div class="row">
@@ -39,7 +39,7 @@
                 <footer>
                         <div class="row"> 
                                 <div class="col text-center">                 
-                                <a href="/#activites" class="page-scroll btn btn-xl">Mes activitÃ©s de montagne</a>
+                                <a href="/#activites" class="page-scroll btn btn-xl" style="color:black">Mes activitÃ©s de montagne</a>
                                 </div>           
                         </div> 
                 </footer>
