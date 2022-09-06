@@ -1,25 +1,53 @@
   <footer>
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                    <span >&copy; {{ site.title }} </br> {{ site.tel }} </br>{{ site.email }} </span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                    
+                  
+
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+                    <span class="fa-stack fa-2x">
+                        <a href=https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&u=https%3A%2F%2Fwww.pierrecunat.fr%2F&display=popup&ref=plugin&src=share_button class="page-scroll">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </a>
+                </span>
+                    <h5 class="service-heading" style="color:black">Partager<br> 
+                    
+                    </h5> 
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+<!--  <footer>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-4">-->
+<!--                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>-->
+<!--                </div>-->
+<!--                <div class="col-md-4">-->
+<!--                    <ul class="list-inline social-buttons">-->
+<!--                     -->
+<!--                        <li><a href= {{ site.people.url }} ><i class="fa fa-{{ site.people.title }}"></i></a>-->
+<!--                        </li>-->
+<!--                     -->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="col-md-4">-->
+<!--                    <ul class="list-inline quicklinks">-->
+<!--                        <li><a href="#">Privacy Policy</a>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Terms of Use</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
