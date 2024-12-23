@@ -1,0 +1,45 @@
+﻿
+COMPILATION SITE INTERNET
+
+Pour la construction de l’architecture du site internet, Jekyll se base sur le fichier index.html
+
+Celui-ci utilise le layout default (dossier _layouts)
+
+Le layout default.html définit la page d’accueil du site 
+	le head.html : contient tout ce qui doit être chargé comme bibliothèque
+	le header.html : c’est le contenu de la première page du site avec 
+		la nav bar
+		le titre du site…
+		la deuxième page du site : activites.html accessible en scroll 
+
+OUVRIR UN TERMINAL DANS LE RÉPERTOIRE DE TRAVAIL
+
+Répertoire de travail : 
+
+~/Documents/Travail/Guide/Communication/SiteInternet/jekykllSite/agency-jekyll-theme-gh-pages4
+
+GENERER EN LOCAL LE SITE
+
+jekyll serve
+jekyll serve --watch
+
+
+PUSHER LES MISES A JOUR EN LOCAL SUR LE NET
+
+git add .
+git commit -m « date des changements »
+git push origin gh-pages
+
+username : ctpierre
+password : 38LcGhDpC05 plus valable 
+Utiliser un PAT (personal access token) sur github : à générer ici : https://github.com/settings/tokens
+
+RECUPERER LA VERSION DISTANTE SUR GITHUB
+Récupérez les mises à jour du site faites online et non présentes en locales
+git pull 
+
+RECUPERER LA VERSION DISTANTE SUR GITHUB ET ECRASER LES MODIFS LOCALES
+git fetch (fetch the local machine folder)
+git reset --hard HEAD (it will remove the local changes)
+git merge origin/gh-pages (merge the changes from the local folder to workspace folder)
+
